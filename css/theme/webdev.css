@@ -187,7 +187,7 @@ kbd, .reveal kbd {
   color: #555;
   box-shadow: inset 0 -2px 1px rgba(255, 255, 255, 0.3), 0 3px #cccccc, 0 4px #bbbbbb, 0 5px #aaaaaa, 0 5px 10px rgba(0, 0, 0, 0.4); }
 
-.reveal code {
+p > code, li > code {
   color: #45898b;
   font-family: Monaco, Consolas, monospace; }
 
