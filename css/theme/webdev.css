@@ -1,43 +1,15 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
-@font-face {
-  font-family: 'League Gothic';
-  src: url("../../lib/font/league_gothic-webfont.eot");
-  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: MyTitleChinese;
-  /* 1. Hiragino looks better than JhengHei and Mac often have both fonts, thus
-   *    put Hiragino prior to JengHei.
-   * 2. Linux shows JhengHei pretty ugly, thus put Micro Hei prior to JhengHei.
-   * 3. Windows users show WenQuanYi Micro Hei pretty ugly, thus use a different stylesheet.
-   */
-  src: local("LiHei Pro"), local("儷黑Pro") local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF;
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: MyMainChinese;
-  /* 1. Hiragino looks better than JhengHei and Mac often have both fonts, thus
-   *    put Hiragino prior to JengHei.
-   * 2. Linux shows JhengHei pretty ugly, thus put Micro Hei prior to JhengHei.
-   * 3. Windows users show WenQuanYi Micro Hei pretty ugly, thus use a different stylesheet.
-   */
-  src: local("ヒラギノ角ゴ Pro"), local(Hiragino Kaku Gothic Pro), local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF; }
-
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)), url("../../images/white_wall.png");
-  background-color: #f7f3de; }
+  /* http://subtlepatterns.com/inspiration-geometry/ */
+  background: url("../../images/geometry.png");
+  background-color: #fafafa; }
 
 .reveal {
-  font-family: MyMainChinese, "Open Sans", sans-serif;
+  font-family: Lato, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -59,14 +31,14 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: MyTitleChinese, "League Gothic", Impact, sans-serif;
+  font-family: Lato, "LiHei Pro", "儷黑Pro", "微軟正黑體", "Microsoft JhengHei", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: 0 3px 2px white, 0 5px 10px rgba(255, 255, 255, 0.5), 0 -1px #666666, 0 -2px #999999, 0 -3px #aaaaaa, 0 -4px white; }
+  text-shadow: 0 2px white; }
 
 /*********************************************
  * LINKS
@@ -153,42 +125,47 @@ body {
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-.reveal .searchdiv {
-  position: absolute;
-  top: 1em;
-  left: 50%;
-  width: 250px;
-  margin-left: -125px; }
-.reveal .nav {
-  margin-left: 0; }
-.reveal .nav li {
-  display: inline-block;
-  margin: 0.3em 0;
-  padding: 0 0.5em;
-  border-left: 1px dotted #999; }
-  .reveal .nav li:first-child {
-    border-left: 0; }
-.reveal .first h1 {
-  font-size: 600%; }
-.reveal section.title:after {
-  font-size: 300%;
-  margin-top: 1em;
-  color: rgba(0, 0, 0, 0.3);
-  text-shadow: 0 2px 3px #fff;
-  content: '⇣';
-  display: block; }
-.reveal img[src$=borderless] {
-  border: 0;
-  box-shadow: none;
-  background: transparent; }
-.reveal a:hover img[src$=borderless] {
-  border: 0;
-  box-shadow: none;
-  background: transparent; }
-.reveal span.fragment.grow {
-  display: inline-block; }
+.reveal {
+  font-weight: lighter; }
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    font-weight: normal; }
+  .reveal .searchdiv {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    width: 250px;
+    margin-left: -125px; }
+  .reveal .nav {
+    margin-left: 0; }
+  .reveal .nav li {
+    display: inline-block;
+    margin: 0.3em 0;
+    padding: 0 0.5em;
+    border-left: 1px dotted #999; }
+    .reveal .nav li:first-child {
+      border-left: 0; }
+  .reveal .first h1 {
+    font-size: 400%;
+    font-weight: bold; }
+  .reveal section.title:after {
+    font-size: 300%;
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 3px #fff;
+    content: '⇣';
+    display: block; }
+  .reveal img[src$=borderless] {
+    border: 0;
+    box-shadow: none;
+    background: transparent; }
+  .reveal a:hover img[src$=borderless] {
+    border: 0;
+    box-shadow: none;
+    background: transparent; }
+  .reveal span.fragment.grow {
+    display: inline-block; }
 
-.leader {
+.reveal .leader {
   margin-top: 1em; }
 
 .trailer {
@@ -210,8 +187,9 @@ kbd, .reveal kbd {
   color: #555;
   box-shadow: inset 0 -2px 1px rgba(255, 255, 255, 0.3), 0 3px #cccccc, 0 4px #bbbbbb, 0 5px #aaaaaa, 0 5px 10px rgba(0, 0, 0, 0.4); }
 
-p > code, li > code {
-  color: #45898b; }
+.reveal code {
+  color: #45898b;
+  font-family: Monaco, Consolas, monospace; }
 
 #searchinputdiv {
   z-index: 10; }
@@ -237,11 +215,11 @@ p > code, li > code {
 .row, .reveal .row {
   overflow: auto;
   margin: 20px -10px; }
-  .row .span1, .reveal .row .span1, .row .span2, .reveal .row .span2, .row .span3, .reveal .row .span3, .row .span4, .reveal .row .span4, .row .span5, .reveal .row .span5, .row .span6, .reveal .row .span6 {
+  .row .span1, .reveal .row .span1, .row .span2, .reveal .row .span2, .row .span3, .reveal .row .span3, .row .span4, .reveal .row .span4, .row .span5, .reveal .row .span5, .row .span6, .reveal .row .span6, .reveal .row .span1, .reveal .row .span2, .reveal .row .span3, .reveal .row .span4, .reveal .row .span5, .reveal .row .span6 {
     box-sizing: border-box;
     padding: 0 10px;
     float: left; }
-    .row .span1 img, .reveal .row .span1 img, .row .span2 img, .reveal .row .span2 img, .row .span3 img, .reveal .row .span3 img, .row .span4 img, .reveal .row .span4 img, .row .span5 img, .reveal .row .span5 img, .row .span6 img, .reveal .row .span6 img {
+    .row .span1 img, .reveal .row .span1 img, .row .span2 img, .reveal .row .span2 img, .row .span3 img, .reveal .row .span3 img, .row .span4 img, .reveal .row .span4 img, .row .span5 img, .reveal .row .span5 img, .row .span6 img, .reveal .row .span6 img, .reveal .row .span1 img, .reveal .row .span2 img, .reveal .row .span3 img, .reveal .row .span4 img, .reveal .row .span5 img, .reveal .row .span6 img {
       width: 100%;
       margin: 0;
       vertical-align: bottom; }

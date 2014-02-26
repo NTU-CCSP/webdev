@@ -6,65 +6,28 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@font-face {
-	font-family: 'League Gothic';
-	src: url('../../lib/font/league_gothic-webfont.eot');
-	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
-		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
-		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: MyTitleChinese;
-  /* 1. Hiragino looks better than JhengHei and Mac often have both fonts, thus
-   *    put Hiragino prior to JengHei.
-   * 2. Linux shows JhengHei pretty ugly, thus put Micro Hei prior to JhengHei.
-   * 3. Windows users show WenQuanYi Micro Hei pretty ugly, thus use a different stylesheet.
-   */
-  src: local("LiHei Pro"), local("儷黑Pro")
-       local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF;
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: MyMainChinese;
-  /* 1. Hiragino looks better than JhengHei and Mac often have both fonts, thus
-   *    put Hiragino prior to JengHei.
-   * 2. Linux shows JhengHei pretty ugly, thus put Micro Hei prior to JhengHei.
-   * 3. Windows users show WenQuanYi Micro Hei pretty ugly, thus use a different stylesheet.
-   */
-  src: local("ヒラギノ角ゴ Pro"), local(Hiragino Kaku Gothic Pro),
-       local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
-
-$headingFont: MyTitleChinese, 'League Gothic', Impact, sans-serif;
-$mainFont: MyMainChinese, "Open Sans", sans-serif;
+$headingFont: Lato, "LiHei Pro", "儷黑Pro", "微軟正黑體", "Microsoft JhengHei", Impact, sans-serif;
+$mainFont: Lato, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 
 // Override theme settings (see ../template/settings.scss)
 $mainColor: #333;
 $headingColor: #333;
 $headingTextShadow: none;
-$backgroundColor: #f7f3de;
+$backgroundColor: #fafafa;
 $headingTextTransform: none;
 $linkColor: #8b743d;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
-$heading1TextShadow: 0 3px 2px #fff, 0 5px 10px rgba(#fff, 0.5), 0 -1px #666, 0 -2px #999, 0 -3px #aaa, 0 -4px #fff;
+$heading1TextShadow: 0 2px #fff;
 
 
 // Background generator
 @mixin bodyBackground() {
 	// @include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
-  background: radial-gradient(rgba(#fff,0), rgba(#000,0.2)), url('../../images/white_wall.png');
+  /* http://subtlepatterns.com/inspiration-geometry/ */
+  background: url('../../images/geometry.png');
 }
 
 
@@ -75,6 +38,12 @@ $heading1TextShadow: 0 3px 2px #fff, 0 5px 10px rgba(#fff, 0.5), 0 -1px #666, 0 
 // Custom rules --------------------------------
 
 .reveal{
+
+  font-weight: lighter;
+
+  h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+  }
 
  .searchdiv{
     position: absolute;
@@ -99,12 +68,10 @@ $heading1TextShadow: 0 3px 2px #fff, 0 5px 10px rgba(#fff, 0.5), 0 -1px #666, 0 
     }
   }
 
-
-
-
   .first{
     h1{
-      font-size: 600%;
+      font-size: 400%;
+      font-weight: bold;
     }
   }
 
@@ -138,7 +105,7 @@ $heading1TextShadow: 0 3px 2px #fff, 0 5px 10px rgba(#fff, 0.5), 0 -1px #666, 0 
   }
 }
 
-.leader{
+.reveal .leader{
   margin-top: 1em;
 }
 
@@ -157,8 +124,9 @@ kbd, .reveal kbd{
   box-shadow: inset 0 -2px 1px rgba(#fff, 0.3), 0 3px #ccc, 0 4px #bbb, 0 5px #aaa, 0 5px 10px rgba(#000, .4);
 }
 
-p>code, li>code{
+.reveal code{
   color: #45898b;
+  font-family: Monaco, Consolas, monospace;
 }
 
 #searchinputdiv{
