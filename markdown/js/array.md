@@ -37,8 +37,6 @@
 
 用中括號 `shoppingList[N]` 來拿到第 N 個要買的東西，N 從 0 開始算。
 
-[陣列方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)很像字串。
-
 ---
 
 陣列實字 Array Literal
@@ -58,10 +56,25 @@ shoppingList.push("稿紙");
 shoppingList.push("綠豆糕");
 ```
 
+---
+
+操作陣列
+-----------
+
+若有個字串變數名叫 `list`……
+
+* `list[位置]`：取得此位置的元素（位置從 0 起算）
+* `list.length`：長度
+* `list.indexOf(元素)`：元素在陣列的位置（從左邊數來）
+* `list.slice(位置)`：切陣列
+
+[[lojux?javascript,console]]
+
+[陣列可以用的 Method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)很像字串。
 
 ---
 
-LearnStreet 練習時間
+Array 課後練習
 --------
 
 [LearnStreet](http://www.learnstreet.com/student/join/o4laIoVQ) 的「Arrays」

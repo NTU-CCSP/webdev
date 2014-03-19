@@ -52,13 +52,13 @@ console.log("我買" + count + "個橘子去，你就在此處不要走動。");
 若有個字串變數名叫 `str`……
 
 * `str[位置]`：取得此位置的字（位置從 0 起算）
-* `str.length`：屬性或長度
+* `str.length`：長度
 * `str.indexOf(字)`：字在字串的位置（從左邊數來）
 * `str.slice(位置)`：切字串
 
 [[mrorz-js-string?javascript,console]]
 
-[String 所有的屬性與方法](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String#String_instances)
+[String 所有的屬性與 Method](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String#String_instances)
 
 ---
 

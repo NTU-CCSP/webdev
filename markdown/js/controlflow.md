@@ -18,14 +18,23 @@
 
 ---
 
-LearnStreet 練習時間
+Truthy & Falsy
+--------
+
+JS Statement 分為 truthy 和 falsy 兩種。
+
+`if` 會分辨 statement 是 truthy 還是 falsy。
+
+[[bixim?js]]
+
+---
+
+`if` 課後練習
 --------
 
 [LearnStreet](http://www.learnstreet.com/student/join/o4laIoVQ) 的「Control Structures」
 
 ![Lean street If](images/js/ls-if.png)
-
-約需 16 分鐘。
 
 ---
 
@@ -85,42 +94,6 @@ You need a `break`
 
 ---
 
-範例：手機號碼
------------
-
-[[mrorz-js-numcheck?javascript,console]]
-
-<p class="fragment">來實作 `numCheck` 吧！</p>
-
----
-
-逐字檢查 (1)
--------
-
-先檢查「整個字串僅含阿拉伯數字與 "-"」。
-
-[[mrorz-js-numcheck?javascript,console]]
-
-註：Javascript 字串可以用 `<`、`>`，比字典順序。
-
----
-
-逐字檢查 (2)
-------
-
-加入判斷「數字要有 10 個」
-
-[[OROFefe?javascript,console]]
-
----
-
-成品
------
-
-[[AJETOfa?javascript,console]]
-
----
-
 繼續執行條件
 -----------
 
@@ -131,7 +104,6 @@ while(繼續執行條件){
 ```
 
 [[iSIHoBa?javascript,console]]
-
 
 ---
 
@@ -186,7 +158,15 @@ for(;;){
 
 ---
 
-LearnStreet 練習時間
+範例：手機號碼檢查
+-----
+
+[[pegap?javascript,console]]
+
+
+---
+
+Loop 回家練習
 --------
 
 [LearnStreet](http://www.learnstreet.com/student/join/o4laIoVQ) 的「Loops」

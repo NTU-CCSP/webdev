@@ -1,36 +1,3 @@
-變數（Variable）
--------------
-
-<div class="row">
-  <div class="span1">
-    <figure>
-      <img src="images/programming/drawer.jpg" alt="Drawer">
-      <figcaption>
-        <small>
-        [圖片來源](http://www.123rf.com/photo_13322817_an-open-filing-drawer-containing-hanging-files-and-documents-labeled-abuse-reports--portrait-orienta.html)
-        </small>
-      </figcaption>
-    </figure>    
-  </div>
-  <div class="span5">
-    <ul>
-      <li>一格抽屜</li>
-
-      <li>外面寫著名字</li>
-
-      <li>裡面放資料／<em>值（value）</em></li>
-    </ul>
-    
-    <hr>
-
-    <p class="fragment">
-      用抽屜的名字來操作裡頭的值。
-    </p>
-  </div>
-</div>
-
----
-
 `var` 敘述
 ---------
 
@@ -89,7 +56,7 @@
 
 ---
 
-其他運算子
+其他 Operator
 ------
 
 * 負數 : `-` (如 `-35`)<br><small>執行結果：新數字</small>
@@ -100,7 +67,7 @@
 
 ---
 
-其他運算子
+其他 Operator (2)
 -------
 * 邏輯運算 : `&&` &nbsp;  `||` &nbsp;  `!`<br><small>執行結果：`true` 或 `false`</small>
 * 三元運算子 : `A ? B : C`<br><small>B、C 的執行結果擇一</small>

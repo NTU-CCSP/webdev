@@ -20,7 +20,6 @@ Syntax Error!
 
 <div class="row">
   <div class="span4 centered">
-    
     ![JSHint](images/js/jshint.png)
   </div>
 </div>
