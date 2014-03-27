@@ -38,11 +38,9 @@ console.log("我買" + count + "個橘子去，你就在此處不要走動。");
 
 `parseFloat(str)`
 
-<div class="row">
-    <div class="span3 centered">
-![parseInt](images/js/parseInt.png)
-    </div>
-</div>
+`+str`（正號。不能含非數字）
+
+[[kolec?js,console]]
 
 ---
 
