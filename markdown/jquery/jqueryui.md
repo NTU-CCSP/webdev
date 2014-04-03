@@ -105,12 +105,14 @@ Demo
 -----
 用 jQuery UI sortable，把[能新增項目的清單](sample/jquery-exercise.html)改成可拖曳
 
-### SPEC
-
 * 要能上下拖曳清單項目
 * 拖曳結束時，將目前順序存進 `localStorage`
-* 新增刪除按鈕，按下去會有 jQuery UI dialog 確認是否繼續
-* 別忘了刪除後也要更新 `localStorage`
 
-<hr>
-[修改後](sample/jqueryui-exercise.html)
+[[tozic]]
+
+---
+
+成品
+----
+
+[[wehop]]
